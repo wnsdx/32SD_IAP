@@ -21,7 +21,9 @@
 *.dep         
 JLinkLog.txt
 
-*.iex /s
-*.htm /s
-*.sct /s
-*.map /s
+*.iex
+*.htm
+*.sct
+*.map
+*.hex
+*.bin

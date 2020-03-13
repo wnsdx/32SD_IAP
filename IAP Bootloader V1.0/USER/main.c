@@ -33,7 +33,7 @@ int main(void)
     delay_init(180);                //初始化延时函数
     uart_init(115200);              //初始化USART
 		delay_ms(500);
-		printf("Uart init OK!\r\n");
+		printf("\r\nBootloader uart init OK!\r\n");
     LED_Init();                     //初始化LED 
     KEY_Init();                     //初始化按键
     SDRAM_Init();                   //初始化SDRAM
@@ -57,13 +57,6 @@ int main(void)
 				USART_RX_CNT=0;
 				printf("用户程序接收完成!\r\n");
 				printf("代码长度:%dBytes\r\n",applenth);
-				
-//				printf("*.bin=\r\n");
-//				for(i=0;i<applenth;i++)
-//				{
-//					printf("%d",USART_RX_BUF[i]);
-//				}
-				
 				clearflag=1;
 			}else oldcount=USART_RX_CNT;			
 		}

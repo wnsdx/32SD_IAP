@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\OBJ\FATFS.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\OBJ\FATFS.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Sat Mar 14 00:33:47 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Sat Mar 14 01:07:41 2020
 <BR><P>
 <H3>Maximum Stack Usage =        656 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -2148,7 +2148,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[7f]"></a>main</STRONG> (Thumb, 434 bytes, Stack size 8 bytes, main.o(i.main))
+<P><STRONG><a name="[7f]"></a>main</STRONG> (Thumb, 440 bytes, Stack size 8 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 656 + Unknown Stack Size
 <LI>Call Chain = main &rArr; f_open &rArr; follow_path &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; FTL_WriteSectors &rArr; FTL_CopyAndWriteToBlock &rArr; FTL_FindSamePlaneUnusedBlock &rArr; FTL_FindUnusedBlock &rArr; NAND_ReadSpare &rArr; NAND_ReadPage &rArr; NAND_ECC_Correction &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>

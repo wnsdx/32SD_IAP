@@ -77,6 +77,7 @@ int main(void)
 	printf("current path:%s\r\n",temp_buff);
 	
 	mf_scan_files("0:");
+	mf_scan_files("1:");
 	
 	updatebuf=mymalloc(SRAMEX,960*1024);//180	
 	res=f_open(&f_anyfile,"0:/1.bin",FA_READ);//打开文件
